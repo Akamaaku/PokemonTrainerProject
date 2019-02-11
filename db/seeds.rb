@@ -2,10 +2,6 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 # Initial population of tables
 
-Pokemon.destroy_all
-Generation.destroy_all
-ElementType.destroy_all
-
 # creating the types table
 puts "Populating Element Types table."
 types_responses = HTTParty.get("https://pokeapi.co/api/v2/type/")
@@ -51,8 +47,9 @@ puts "Populating Pokemon table."
         species_data = JSON.parse(species_responses.body)
 
         pokemon_generation = Generation.where(:generation => species_data['generation']['name']).take
-        pokemon = pokemon_generation.pokemons.new(:name => result['species']['name'],
-                                          :imageURL => result['sprites']['front_default'])
+        pokemon = Pokemon.new(:name => result['species']['name'],
+                               :generation_id => pokemon_generation.id,
+                               :imageURL => result['sprites']['front_default'])
 
         result['types'].each do |type|
             if type['slot'] == 2 then
@@ -65,7 +62,7 @@ puts "Populating Pokemon table."
 
         species_data['pokedex_numbers'].each do |official|
             if official['pokedex']['name'] == "national"
-                pokemon.pokdexID = official['entry_number']
+                pokemon.pokedexID = official['entry_number']
             end
         end
 
