@@ -31,7 +31,7 @@ sleep 30
 
 # creating the Pokemon table
 # change the offset depending on batch runs due to hitting a limit.
-offset = 0
+offset = Pokemon.all.count < 1? 0 : Pokemon.last.pokedexID
 limit = 20
 
 puts "Populating Pokemon table."
@@ -105,11 +105,35 @@ puts "Populating Pokemon table."
 
     end
 
-    sleep 120
+    sleep 30
     offset += limit
 
     puts Pokemon.count
 end
 puts "Populating Pokemon table complete."
 
+puts "Populating trainers and teams tables."
+
+20.times do
+    trainer = Trainer.new(:name => Faker::Game::LeagueOfLegends.champion,
+                          :trainerType => Faker::Company.profession)
+
+    team = trainer.teams.new(:teamName => Faker::Coffee.blend_name)
+
+    available_pokemon = Pokemon.count.to_i
+    pokemon_party_number = rand(1..6)
+    random_pokemon = rand(1..available_pokemon)
+    position = 1
+
+    pokemon_party_number.times do
+        team.team_members.create(:nickname => Faker::Ancient.gods,
+                                 :position => position,
+                                 :pokedexID => Pokemon.where(pokedexID => random_pokemon).id)
+    end
+    team.save
+    trainer.save
+
+end
+
+puts "Populating trainers and teams complete."
 puts 'Seeding Complete'
