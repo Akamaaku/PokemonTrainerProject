@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pokedexID: 1
+  name: MyString
+  pokedexDescription: MyString
+  evolveTo: MyString
+  evolveFrom: MyString
+  secondaryType: MyString
+  imageURL: MyString
+  generation: one
+  element_type: one
+
+two:
+  pokedexID: 1
+  name: MyString
+  pokedexDescription: MyString
+  evolveTo: MyString
+  evolveFrom: MyString
+  secondaryType: MyString
+  imageURL: MyString
+  generation: two
+  element_type: two

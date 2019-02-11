@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_11_034143) do
+ActiveRecord::Schema.define(version: 2019_02_11_034607) do
 
   create_table "element_types", force: :cascade do |t|
     t.string "typeName"
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(version: 2019_02_11_034143) do
     t.string "generation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "pokemons", force: :cascade do |t|
+    t.integer "pokedexID"
+    t.string "name"
+    t.string "pokedexDescription"
+    t.string "evolveTo"
+    t.string "evolveFrom"
+    t.string "secondaryType"
+    t.string "imageURL"
+    t.integer "generation_id"
+    t.integer "element_type_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["element_type_id"], name: "index_pokemons_on_element_type_id"
+    t.index ["generation_id"], name: "index_pokemons_on_generation_id"
   end
 
 end
