@@ -20,19 +20,25 @@ sleep 30
 # creating the games table
 
 puts "Populating Game table."
-
+Game.destroy_all
 api_key = ENV["GIANT_BOMB_KEY"]
 game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
                               "api_key=#{api_key}" +
                               '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
                               '&filter=name:pokemon&format=json')
 game_data = JSON.parse(game_resources.body)
-
+approved_game_list = ['Pokémon Red/Blue', 'Pokémon Yellow', 'Pokémon Gold/Silver', 'Pokémon Crystal',
+                      'Pokémon Ruby/Sapphire', 'Pokémon Emerald', 'Pokémon FireRed/LeafGreen', 'Pokémon Diamond/Pearl',
+                      'Pokémon Platinum', 'Pokémon HeartGold/SoulSilver', 'Pokémon Black/White', 'Pokémon Black/White Version 2',
+                      'Pokémon X/Y', 'Pokémon Omega Ruby/Alpha Sapphire', 'Pokémon Sun/Moon', 'Pokémon Ultra Sun/Ultra Moon',
+                      'Pokémon: Let\'s Go, Pikachu!/Eevee!']
 game_data['results'].each do |game|
-    video_game = Game.create(:title => game['name'],
-                             :dateCreated => game['original_release_date'],
-                             :image => game['original_url'],
-                             :detailsURL => game['site_detail_url'])
+    if approved_game_list.include?(game['name'])
+        video_game = Game.create(:title => game['name'],
+                                :dateCreated => game['original_release_date'],
+                                :image => game['original_url'],
+                                :detailsURL => game['site_detail_url'])
+    end
 end
 
 pp Game.count
