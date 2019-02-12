@@ -26,12 +26,15 @@ game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
                               '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
                               '&filter=name:pokemon&format=json')
 game_data = JSON.parse(game_resources.body)
-
+pp game_data
 game_data['results'].each do |game|
     video_game = Game.create(:title => game['name'],
                              :dateCreated => game['original_release_date'],
-                             :image => game['original_url'])
+                             :image => game['original_url'],
+                             :detailsURL => game['site_detail_url'])
 end
+
+pp Game.count
 
 puts "Populating Game table complete."
 # creating the generations table
@@ -117,7 +120,7 @@ pokemon_type_data['results'].each do |index|
             end
         end
     end
-
+    pp pokemon
     pokemon.save
 end
 
@@ -130,7 +133,7 @@ puts "Populating Pokemon table complete."
 
 puts "Populating trainers and teams tables."
 
-20.times do
+30.times do
     trainer = Trainer.create(:name => Faker::Games::LeagueOfLegends.unique.champion,
                              :trainerType => Faker::Company.profession)
 
