@@ -4,6 +4,6 @@ class TrainersController < ApplicationController
   end
 
   def show
-    @trainer = Trainer.include(:teams).find(params[:id])
+    @trainer = Trainer.includes(:teams).find(params[:id])
   end
 end

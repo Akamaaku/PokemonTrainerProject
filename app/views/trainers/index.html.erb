@@ -1,9 +1,16 @@
 <h1>Pokemon Trainers</h1>
 
-<ul>
+<table class="table">
+<thead class="thead-danger">
+    <tr>Trainer ID:</tr>
+    <tr>Trainer Name:</tr>
+    <tr>Trainer Type:</tr>
+</thead>
+<tbody>
 <% @trainers.each do |trainer|%>
-    <li>
-        Trainer: <%= link_to trainer.name, trainer %> Type: <%= trainer.trainerType%>
-    </li>
+    <tr><%= link_to trainer.id, trainer %></tr>
+    <tr><%= link_to trainer.name, trainer %></tr>
+    <tr><%= trainer.trainerType %></tr>
 <% end %>
-</ul>
+</tbody>
+</table>
