@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'trainers/index'
-  get 'trainers/show'
-  get 'trainer/index'
-  get 'trainer/show'
+  resources :trainers, only:[:index, :show]
+  resources :pages
+  root to: 'trainers#index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

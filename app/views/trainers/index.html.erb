@@ -1,2 +1,9 @@
-<h1>Trainers#index</h1>
-<p>Find me in app/views/trainers/index.html.erb</p>
+<h1>Pokemon Trainers</h1>
+
+<ul>
+<% @trainers.each do |trainer|%>
+    <li>
+        Trainer: <%= link_to trainer.name, trainer %> Type: <%= trainer.trainerType%>
+    </li>
+<% end %>
+</ul>
