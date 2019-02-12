@@ -16,6 +16,20 @@ end
 puts "Populating Element Types table complete."
 
 sleep 30
+
+# creating the games table
+
+puts "Populating Game table."
+
+game_data = File.read('C:\Users\markn\fullstack\Ruby\pokemon_project\db\game.json')
+
+game_data['results'].each do |game|
+    video_game = Game.create(:title => game['name'],
+                             :dateCreated => game['original_release_date'],
+                             :image => game['original_url'])
+end
+
+puts "Populating Game table complete."
 # creating the generations table
 
 puts "Populating Generations table."
@@ -112,7 +126,6 @@ puts "Populating Pokemon table complete."
 
 puts "Populating trainers and teams tables."
 
-
 20.times do
     trainer = Trainer.create(:name => Faker::Games::LeagueOfLegends.unique.champion,
                              :trainerType => Faker::Company.profession)
@@ -136,4 +149,5 @@ puts "Populating trainers and teams tables."
 end
 
 puts "Populating trainers and teams complete."
+
 puts 'Seeding Complete'
