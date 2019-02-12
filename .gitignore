@@ -35,3 +35,8 @@
 
 #Ignore docs directory
 /docs
+<<<<<<< HEAD
+=======
+# Ignore application configuration
+/config/application.yml
+>>>>>>> Populating_DB_V2
