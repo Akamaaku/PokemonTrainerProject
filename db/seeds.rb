@@ -21,12 +21,13 @@ sleep 30
 
 puts "Populating Game table."
 
+api_key = ENV["GIANT_BOMB_KEY"]
 game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
-                              "api_key=#{ENV['GIANT_BOMB_API_KEY']}" +
+                              "api_key=#{api_key}" +
                               '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
                               '&filter=name:pokemon&format=json')
 game_data = JSON.parse(game_resources.body)
-pp game_data
+
 game_data['results'].each do |game|
     video_game = Game.create(:title => game['name'],
                              :dateCreated => game['original_release_date'],
@@ -120,7 +121,6 @@ pokemon_type_data['results'].each do |index|
             end
         end
     end
-    pp pokemon
     pokemon.save
 end
 
@@ -133,13 +133,13 @@ puts "Populating Pokemon table complete."
 
 puts "Populating trainers and teams tables."
 
-30.times do
+15.times do
     trainer = Trainer.create(:name => Faker::Games::LeagueOfLegends.unique.champion,
                              :trainerType => Faker::Company.profession)
 
     team = trainer.teams.create(:teamName => Faker::Coffee.blend_name)
 
-    available_pokemon = Pokemon.count.to_i
+    available_pokemon = Pokemon.count
     pokemon_party_number = rand(1..6)
     random_pokemon = rand(1..available_pokemon)
 
