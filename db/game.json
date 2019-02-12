@@ -1,0 +1,311 @@
+{
+  "results": [
+    {
+      "guid": "3030-3240",
+      "id": "3240",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2389393-pok_mon_diamond_and_pearl_box_artwork.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon Diamond/Pearl",
+      "original_release_date": "2007-04-22 00:00:00"
+    },
+    {
+      "guid": "3030-3966",
+      "id": "3966",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/1226087-pkmn_rab.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/1226087-pkmn_rab.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/1226087-pkmn_rab.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/1226087-pkmn_rab.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/1226087-pkmn_rab.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/1226087-pkmn_rab.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/1226087-pkmn_rab.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/1226087-pkmn_rab.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/1226087-pkmn_rab.jpg",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Red/Blue",
+      "original_release_date": "1996-02-27 00:00:00"
+    },
+    {
+      "guid": "3030-8210",
+      "id": "8210",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/1276964-pkmn_goldsilver.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/1276964-pkmn_goldsilver.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/1276964-pkmn_goldsilver.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/1276964-pkmn_goldsilver.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/1276964-pkmn_goldsilver.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/1276964-pkmn_goldsilver.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/1276964-pkmn_goldsilver.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/1276964-pkmn_goldsilver.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/1276964-pkmn_goldsilver.png",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon Gold/Silver",
+      "original_release_date": "1999-11-21 00:00:00"
+    },
+    {
+      "guid": "3030-10122",
+      "id": "10122",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/1255532-pkmnrubysapphire.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/1255532-pkmnrubysapphire.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/1255532-pkmnrubysapphire.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/1255532-pkmnrubysapphire.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/1255532-pkmnrubysapphire.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/1255532-pkmnrubysapphire.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/1255532-pkmnrubysapphire.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/1255532-pkmnrubysapphire.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/1255532-pkmnrubysapphire.png",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon Ruby/Sapphire",
+      "original_release_date": "2003-03-19 00:00:00"
+    },
+    {
+      "guid": "3030-11552",
+      "id": "11552",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2179495-box_pkmnev.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2179495-box_pkmnev.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2179495-box_pkmnev.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2179495-box_pkmnev.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2179495-box_pkmnev.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2179495-box_pkmnev.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2179495-box_pkmnev.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2179495-box_pkmnev.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/2179495-box_pkmnev.png",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Emerald",
+      "original_release_date": "2004-09-16 00:00:00"
+    },
+    {
+      "guid": "3030-14522",
+      "id": "14522",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/1467924-pkmn_fireredleafgreen.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/1467924-pkmn_fireredleafgreen.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/1467924-pkmn_fireredleafgreen.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/1467924-pkmn_fireredleafgreen.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/1467924-pkmn_fireredleafgreen.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/1467924-pkmn_fireredleafgreen.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/1467924-pkmn_fireredleafgreen.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/1467924-pkmn_fireredleafgreen.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/1467924-pkmn_fireredleafgreen.png",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon FireRed/LeafGreen",
+      "original_release_date": "2004-09-07 00:00:00"
+    },
+    {
+      "guid": "3030-15861",
+      "id": "15861",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2171280-box_pkmncv.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2171280-box_pkmncv.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2171280-box_pkmncv.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2171280-box_pkmncv.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2171280-box_pkmncv.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2171280-box_pkmncv.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2171280-box_pkmncv.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2171280-box_pkmncv.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/2171280-box_pkmncv.png",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Crystal",
+      "original_release_date": "2000-12-14 00:00:00"
+    },
+    {
+      "guid": "3030-18673",
+      "id": "18673",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2171295-box_pkmnyv.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2171295-box_pkmnyv.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2171295-box_pkmnyv.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2171295-box_pkmnyv.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2171295-box_pkmnyv.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2171295-box_pkmnyv.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2171295-box_pkmnyv.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2171295-box_pkmnyv.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/2171295-box_pkmnyv.png",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Yellow: Special Pikachu Edition",
+      "original_release_date": "1998-09-12 00:00:00"
+    },
+    {
+      "guid": "3030-21676",
+      "id": "21676",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2171285-box_pkmnpv.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2171285-box_pkmnpv.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2171285-box_pkmnpv.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2171285-box_pkmnpv.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2171285-box_pkmnpv.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2171285-box_pkmnpv.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2171285-box_pkmnpv.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2171285-box_pkmnpv.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/2171285-box_pkmnpv.png",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Platinum",
+      "original_release_date": "2009-03-22 00:00:00"
+    },
+    {
+      "guid": "3030-26372",
+      "id": "26372",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/1359732-hgss.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/1359732-hgss.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/1359732-hgss.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/1359732-hgss.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/1359732-hgss.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/1359732-hgss.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/1359732-hgss.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/1359732-hgss.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/1359732-hgss.png",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon HeartGold/SoulSilver",
+      "original_release_date": "2010-03-14 00:00:00"
+    },
+    {
+      "guid": "3030-30613",
+      "id": "30613",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2068104-pokemon_whack.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2068104-pokemon_whack.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2068104-pokemon_whack.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2068104-pokemon_whack.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2068104-pokemon_whack.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2068104-pokemon_whack.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2068104-pokemon_whack.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2068104-pokemon_whack.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2068104-pokemon_whack.jpg",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Black/White",
+      "original_release_date": "2011-03-06 00:00:00"
+    },
+    {
+      "guid": "3030-37603",
+      "id": "37603",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2409640-pkmbw2.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2409640-pkmbw2.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2409640-pkmbw2.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2409640-pkmbw2.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2409640-pkmbw2.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2409640-pkmbw2.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2409640-pkmbw2.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2409640-pkmbw2.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2409640-pkmbw2.jpg",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Black/White Version 2",
+      "original_release_date": "2012-10-07 00:00:00"
+    },
+    {
+      "guid": "3030-41088",
+      "id": "41088",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2482818-pokemonxy.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2482818-pokemonxy.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2482818-pokemonxy.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2482818-pokemonxy.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2482818-pokemonxy.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2482818-pokemonxy.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2482818-pokemonxy.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2482818-pokemonxy.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2482818-pokemonxy.jpg",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon X/Y",
+      "original_release_date": "2013-10-12 00:00:00"
+    },
+    {
+      "guid": "3030-46251",
+      "id": "46251",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2630130-rubysapphire.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2630130-rubysapphire.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2630130-rubysapphire.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2630130-rubysapphire.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2630130-rubysapphire.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2630130-rubysapphire.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2630130-rubysapphire.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2630130-rubysapphire.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2630130-rubysapphire.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon Omega Ruby/Alpha Sapphire",
+      "original_release_date": "2014-11-21 00:00:00"
+    },
+    {
+      "guid": "3030-50840",
+      "id": "50840",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2869191-pkmngologo.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2869191-pkmngologo.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2869191-pkmngologo.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2869191-pkmngologo.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2869191-pkmngologo.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2869191-pkmngologo.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2869191-pkmngologo.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2869191-pkmngologo.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/2869191-pkmngologo.png",
+        "image_tags": "All Images"
+      },
+      "name": "Pokémon Go",
+      "original_release_date": "2016-07-06 00:00:00"
+    },
+    {
+      "guid": "3030-52769",
+      "id": "52769",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/2901149-gbpsmcover.jpg",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/2901149-gbpsmcover.jpg",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/2901149-gbpsmcover.jpg",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/2901149-gbpsmcover.jpg",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/2901149-gbpsmcover.jpg",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/2901149-gbpsmcover.jpg",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/2901149-gbpsmcover.jpg",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/2901149-gbpsmcover.jpg",
+        "original_url": "https://www.giantbomb.com/api/image/original/2901149-gbpsmcover.jpg",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon Sun/Moon",
+      "original_release_date": "2016-11-18 00:00:00"
+    },
+    {
+      "guid": "3030-68738",
+      "id": "68738",
+      "image": {
+        "icon_url": "https://www.giantbomb.com/api/image/square_avatar/3024305-untitled-3.png",
+        "medium_url": "https://www.giantbomb.com/api/image/scale_medium/3024305-untitled-3.png",
+        "screen_url": "https://www.giantbomb.com/api/image/screen_medium/3024305-untitled-3.png",
+        "screen_large_url": "https://www.giantbomb.com/api/image/screen_kubrick/3024305-untitled-3.png",
+        "small_url": "https://www.giantbomb.com/api/image/scale_small/3024305-untitled-3.png",
+        "super_url": "https://www.giantbomb.com/api/image/scale_large/3024305-untitled-3.png",
+        "thumb_url": "https://www.giantbomb.com/api/image/scale_avatar/3024305-untitled-3.png",
+        "tiny_url": "https://www.giantbomb.com/api/image/square_mini/3024305-untitled-3.png",
+        "original_url": "https://www.giantbomb.com/api/image/original/3024305-untitled-3.png",
+        "image_tags": "All Images,Box Art"
+      },
+      "name": "Pokémon: Let's Go, Pikachu!/Eevee!",
+      "original_release_date": "2018-11-16 00:00:00"
+    }
+  ],
+  "version": "1.0"
+}
