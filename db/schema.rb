@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_12_050406) do
+ActiveRecord::Schema.define(version: 2019_02_12_150343) do
 
   create_table "element_types", force: :cascade do |t|
     t.string "typeName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "game_generations", force: :cascade do |t|
+    t.integer "game_id"
+    t.integer "generation_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_game_generations_on_game_id"
+    t.index ["generation_id"], name: "index_game_generations_on_generation_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -25,11 +34,6 @@ ActiveRecord::Schema.define(version: 2019_02_12_050406) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "detailsURL"
-  end
-
-  create_table "games_generations", id: false, force: :cascade do |t|
-    t.integer "game_id", null: false
-    t.integer "generation_id", null: false
   end
 
   create_table "generations", force: :cascade do |t|

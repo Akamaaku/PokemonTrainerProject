@@ -3,47 +3,43 @@
 # Initial population of tables
 
 # creating the types table
-puts "Populating Element Types table."
-types_responses = HTTParty.get("https://pokeapi.co/api/v2/type/")
-types_data = JSON.parse(types_responses.body)
+# commented out as the table is now created.
+# puts "Populating Element Types table."
+# types_responses = HTTParty.get("https://pokeapi.co/api/v2/type/")
+# types_data = JSON.parse(types_responses.body)
 
-types_data['results'].each do |type|
-    type_response = HTTParty.get(type['url'])
-    type_data = JSON.parse(type_response.body)
-    element_type = ElementType.create(:typeName => type_data['name'])
-end
+# types_data['results'].each do |type|
+#     type_response = HTTParty.get(type['url'])
+#     type_data = JSON.parse(type_response.body)
+#     element_type = ElementType.create(:typeName => type_data['name'])
+# end
 
-puts "Populating Element Types table complete."
-
-sleep 30
+# puts "Populating Element Types table complete."
 
 # creating the games table
+# commented out as the table is now created
+# puts "Populating Game table."
+# api_key = ENV["GIANT_BOMB_KEY"]
+# game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
+#                               "api_key=#{api_key}" +
+#                               '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
+#                               '&filter=name:pokemon&format=json')
+# game_data = JSON.parse(game_resources.body)
+# approved_game_list = ['Pokémon Red/Blue', 'Pokémon Yellow: Special Pikachu Edition', 'Pokémon Gold/Silver', 'Pokémon Crystal',
+#                       'Pokémon Ruby/Sapphire', 'Pokémon Emerald', 'Pokémon FireRed/LeafGreen', 'Pokémon Diamond/Pearl',
+#                       'Pokémon Platinum', 'Pokémon HeartGold/SoulSilver', 'Pokémon Black/White', 'Pokémon Black/White Version 2',
+#                       'Pokémon X/Y', 'Pokémon Omega Ruby/Alpha Sapphire', 'Pokémon Sun/Moon', 'Pokémon Ultra Sun/Ultra Moon',
+#                       'Pokémon: Let\'s Go, Pikachu!/Eevee!']
+# game_data['results'].each do |game|
+#     if approved_game_list.include?(game['name'])
+#         video_game = Game.create(:title => game['name'],
+#                                 :dateCreated => game['original_release_date'],
+#                                 :image => game['original_url'],
+#                                 :detailsURL => game['site_detail_url'])
+#     end
+# end
 
-puts "Populating Game table."
-Game.destroy_all
-api_key = ENV["GIANT_BOMB_KEY"]
-game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
-                              "api_key=#{api_key}" +
-                              '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
-                              '&filter=name:pokemon&format=json')
-game_data = JSON.parse(game_resources.body)
-approved_game_list = ['Pokémon Red/Blue', 'Pokémon Yellow', 'Pokémon Gold/Silver', 'Pokémon Crystal',
-                      'Pokémon Ruby/Sapphire', 'Pokémon Emerald', 'Pokémon FireRed/LeafGreen', 'Pokémon Diamond/Pearl',
-                      'Pokémon Platinum', 'Pokémon HeartGold/SoulSilver', 'Pokémon Black/White', 'Pokémon Black/White Version 2',
-                      'Pokémon X/Y', 'Pokémon Omega Ruby/Alpha Sapphire', 'Pokémon Sun/Moon', 'Pokémon Ultra Sun/Ultra Moon',
-                      'Pokémon: Let\'s Go, Pikachu!/Eevee!']
-game_data['results'].each do |game|
-    if approved_game_list.include?(game['name'])
-        video_game = Game.create(:title => game['name'],
-                                :dateCreated => game['original_release_date'],
-                                :image => game['original_url'],
-                                :detailsURL => game['site_detail_url'])
-    end
-end
-
-pp Game.count
-
-puts "Populating Game table complete."
+# puts "Populating Game table complete."
 # creating the generations table
 
 puts "Populating Generations table."
@@ -55,12 +51,43 @@ end
 
 puts "Populating Generations table complete."
 
-sleep 30
+puts "Populating GameGeneration table."
+game_generation_list = [{'title' => 'Pokémon Red/Blue', 'value' => 1},
+                      {'title' => 'Pokémon Yellow: Special Pikachu Edition', 'value' => 1},
+                      {'title' => 'Pokémon Gold/Silver', 'value' => 2},
+                      {'title' => 'Pokémon Crystal', 'value' => 2},
+                      {'title' => 'Pokémon Ruby/Sapphire', 'value' => 3},
+                      {'title' => 'Pokémon Emerald', 'value' => 3},
+                      {'title' => 'Pokémon FireRed/LeafGreen', 'value' => 3},
+                      {'title' => 'Pokémon Diamond/Pearl', 'value' => 4},
+                      {'title' => 'Pokémon Platinum', 'value' => 4},
+                      {'title' => 'Pokémon HeartGold/SoulSilver', 'value' => 4},
+                      {'title' => 'Pokémon Black/White', 'value' => 5},
+                      {'title' => 'Pokémon Black/White Version 2', 'value' => 5},
+                      {'title' => 'Pokémon X/Y', 'value' => 6},
+                      {'title' => 'Pokémon Omega Ruby/Alpha Sapphire', 'value' => 6},
+                      {'title' => 'Pokémon Sun/Moon', 'value' => 7},
+                      {'title' => 'Pokémon Ultra Sun/Ultra Moon', 'value' => 7},
+                      {'title' => 'Pokémon: Let\'s Go, Pikachu!/Eevee!', 'value' => 1}]
+game_generation_list.each do |item|
+    game = Game.where(:title => item['title']).take
+    pp game
+    values = item['value']
+    pp values
+    values.times do |value|
+        generation = Generation.where(:id => value + 1).take
+        pp generation
+        game_generation = GameGeneration.create(:game_id => game.id, :generation_id => generation.id)
+        pp game_generation
+    end
+end
+puts "Populating GameGeneration table complete."
+
 
 # creating the Pokemon table
 # change the offset depending on batch runs due to hitting a limit.
 offset = Pokemon.all.count < 1? 0 : Pokemon.last.pokedexID
-limit = 20
+limit = 40
 
 puts "Populating Pokemon table."
 
@@ -136,31 +163,27 @@ offset += limit
 puts Pokemon.count
 
 puts "Populating Pokemon table complete."
+# Commented out to prevent more trainers from being created.
+# puts "Populating trainers and teams tables."
 
-puts "Populating trainers and teams tables."
+# 15.times do
+#     trainer = Trainer.create(:name => Faker::Games::LeagueOfLegends.unique.champion,
+#                              :trainerType => Faker::Company.profession)
 
-15.times do
-    trainer = Trainer.create(:name => Faker::Games::LeagueOfLegends.unique.champion,
-                             :trainerType => Faker::Company.profession)
+#     team = trainer.teams.create(:teamName => Faker::Coffee.blend_name)
 
-    team = trainer.teams.create(:teamName => Faker::Coffee.blend_name)
+#     available_pokemon = Pokemon.count
+#     pokemon_party_number = rand(1..6)
+#     random_pokemon = rand(1..available_pokemon)
 
-    available_pokemon = Pokemon.count
-    pokemon_party_number = rand(1..6)
-    random_pokemon = rand(1..available_pokemon)
+#     pokemon_party_number.times do |position|
+#         pokemon = Pokemon.where(:pokedexID => random_pokemon).take
+#         party_member = team.team_members.create(:nickname => Faker::FunnyName.name,
+#                                                 :position => position + 1,
+#                                                 :pokemon_id => pokemon.id)
+#     end
+# end
 
-    pokemon_party_number.times do |position|
-        pokemon = Pokemon.where(:pokedexID => random_pokemon).take
-        party_member = team.team_members.create(:nickname => Faker::FunnyName.name,
-                                                :position => position + 1,
-                                                :pokemon_id => pokemon.id)
-        pp party_member
-    end
-
-    pp team
-    pp trainer
-end
-
-puts "Populating trainers and teams complete."
+# puts "Populating trainers and teams complete."
 
 puts 'Seeding Complete'
