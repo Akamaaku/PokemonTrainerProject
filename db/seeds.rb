@@ -21,7 +21,11 @@ sleep 30
 
 puts "Populating Game table."
 
-game_data = File.read('C:\Users\markn\fullstack\Ruby\pokemon_project\db\game.json')
+game_resources = HTTParty.get('https://www.giantbomb.com/api/games/?'+
+                              "api_key=#{ENV['GIANT_BOMB_API_KEY']}" +
+                              '&field_list=name,guid,id,image,original_release_date,site_detail_url'+
+                              '&filter=name:pokemon&format=json')
+game_data = JSON.parse(game_resources.body)
 
 game_data['results'].each do |game|
     video_game = Game.create(:title => game['name'],
