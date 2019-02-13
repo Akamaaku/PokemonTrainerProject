@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'games/index'
+  get 'games/show'
   get 'generations/index'
   get 'generations/show'
   get 'pokemons/index'
