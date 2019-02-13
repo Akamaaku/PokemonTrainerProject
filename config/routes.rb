@@ -1,15 +1,10 @@
 Rails.application.routes.draw do
-  get 'games/index'
-  get 'games/show'
-  get 'generations/index'
-  get 'generations/show'
-  get 'pokemons/index'
-  get 'pokemons/show'
-  get 'team_members/index'
-  get 'team_members/show'
-  get 'teams/index'
-  get 'teams/show'
   resources :trainers, only:[:index, :show]
+  resources :teams, only:[:index, :show]
+  resources :team_members, only:[:index, :show]
+  resources :pokemons, only:[:index, :show]
+  resources :generations, only:[:index, :show]
+  resources :games, only:[:index, :show]
   resources :pages
   root to: 'trainers#index'
 
