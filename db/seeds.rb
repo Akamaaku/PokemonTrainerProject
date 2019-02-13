@@ -182,4 +182,60 @@
 
 # puts "Populating trainers and teams complete."
 
+content ='Trainers Table
+trainer_id - 6 digit unique number for trainers to have.
+name - Name of the trainer.
+trainerType - Type of trainer for example Gym Trainer or Elite Four Member
+team_id - id linked to the Teams tables which will consist of the trainers party pokemon.
+
+Teams Table
+team_id - the id for the specific team.
+teamName - the name of the party
+trainer_id - Foreign Key to trainers
+
+TeamMembers Table
+member_id - the id for the pokemon in the team.
+nickname - the nickname of the pokemon.
+position - the position in the team.
+pokemon_id - the foreign key to reference on the type of pokemon.
+team_id - the foreign key to link to the specific team.
+
+Pokemons Table
+pokedexID - the official pokedex ID number for the pokemon.
+name - name of the pokemon.
+pokedexDescription - the official pokedex description for the pokemon.
+evolvesTo - the name of the pokemon they can evolve to.
+evolvesFrom - the name of the pokemon they evolved from.
+type_id - their primary element type linked by the foreign key to types table.
+secondaryType - if they have a seconary element type.
+generation_id - the generation this pokemon is first introduced
+imageURL - a link to a sprite image for the pokemon.
+
+ElementTypes Table
+type_id - the element type id
+typeName - name of the element.
+
+Generations Table
+generation_id - the generation id
+generation - the roman numeral for the generation number
+
+Games Table
+game_id - the id number for the game
+title - the name of the game
+releaseDate - the release date of the game.
+gameType - the type of game
+image - the main image for the game
+generation_id - the foreign key
+
+GamesGeneration Composite Table
+generation_id - linked to Generations
+game_id - linked to Games
+
+Sources:
+PokeAPI
+GiantBomb
+'
+
+Page.create(title: 'About', content: content, permalink: 'about')
+
 # puts 'Seeding Complete'

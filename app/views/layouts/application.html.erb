@@ -15,10 +15,10 @@
       <div class="ui inverted menu">
         <a class="red item active" href='<%= root_path %>'>Trainers</a>
         <a class="red item" href='<%= teams_path %>'>Teams</a>
-        <a class="red item" href='<%= teams_path %>'>Pokemon</a>
-        <a class="red item" href='<%= teams_path %>'>Generation</a>
-        <a class="red item" href='<%= teams_path %>'>Game</a>
-        <a class="red item" href='<%= teams_path %>'>About</a>
+        <a class="red item" href='<%= pokemons_path %>'>Pokemon</a>
+        <a class="red item" href='<%= generations_path %>'>Generation</a>
+        <a class="red item" href='<%= games_path %>'>Game</a>
+        <a class="red item" href='<%= static_path(permalink: 'about') %>'>About</a>
         <div class="ui inverted menu">
         <div class="item">
           <%= form_tag(search_results_path, method: "get") do %>

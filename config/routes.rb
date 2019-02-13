@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :generations, only:[:index, :show]
   resources :games, only:[:index, :show]
   resources :pages
+  get 'static/:permalink', to: 'pages#permalink', as: 'static'
   root to: 'trainers#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
