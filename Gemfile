@@ -16,18 +16,16 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# Using kaminari for pagination
+gem 'kaminari'
 # Using bootstrap for css and styling
 gem 'bootstrap', '~> 4.3.0'
-
 # Switch to Semantic instead of bootstrap due to failure to load
 gem 'semantic-ui-sass'
-
 # Using jquery methods for this application.
 gem 'jquery-rails'
-
 # Using HTTParty to do my get requests for external API's
 gem 'httparty'
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
