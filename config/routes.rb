@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'team_members/index'
+  get 'team_members/show'
   get 'teams/index'
   get 'teams/show'
   resources :trainers, only:[:index, :show]
