@@ -15,5 +15,6 @@
 //= require turbolinks
 //= require jquery3
 //= require popper
-//= require bootstrap
+// Loads all Semantic javascripts
+//= require semantic-ui
 //= require_tree .

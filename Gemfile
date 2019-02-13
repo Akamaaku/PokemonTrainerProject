@@ -6,7 +6,7 @@ ruby '2.6.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -17,7 +17,10 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 # Using bootstrap for css and styling
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.3.0'
+
+# Switch to Semantic instead of bootstrap due to failure to load
+gem 'semantic-ui-sass'
 
 # Using jquery methods for this application.
 gem 'jquery-rails'
