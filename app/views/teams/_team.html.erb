@@ -1,0 +1,12 @@
+<div class="ui three stackable cards">
+    <% team.team_members.each do |member|%>
+    <div class="card">
+        <div class="image">
+            <img src="<%= member.pokemon.imageURL%>">
+        </div>
+        <div class="content">
+            <h3 class="ui header"><%= link_to member.nickname, member%></h3>
+        </div>
+    </div>
+    <% end %>
+</div>

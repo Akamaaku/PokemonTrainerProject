@@ -1,18 +1,5 @@
-<div class="ui raised very padded text container segment">
-    <h1 class="ui header">Name: <%= @trainer.name %></h1>
-    <h3 class="ui header">Trainer Type: <%= @trainer.trainerType.upcase %></h3>
-    <h3 class="ui header">Team Name:<%= @trainer.team.teamName %></h3>
-    <div class="ui three stackable cards">
-    <% @trainer.team.team_members.each do |member|%>
-    <div class="card">
-        <div class="image">
-            <img src="<%= member.pokemon.imageURL%>">
-        </div>
-        <div class="content">
-            <h3 class="ui header"><%= link_to member.nickname, member%></h3>
-        </div>
-    </div>
-    <% end %>
-
-</div>
+<h1 class="ui header">Name: <%= @trainer.name %></h1>
+<h3 class="ui header">Trainer Type: <%= @trainer.trainerType.upcase %></h3>
+<h3 class="ui header">Team Name:<%= @trainer.team.teamName %></h3>
+<%= render @trainer.team%>
 
