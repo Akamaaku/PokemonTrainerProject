@@ -1,20 +1,22 @@
-<h1 class="ui header">Pokemon Trainers</h1>
+<div class="ui raised very padded text container segment">
+    <h1 class="ui header">Pokemon Trainers</h1>
 
-<table class="ui striped table">
-<thead>
-    <tr>
-        <th>Trainer ID:</th>
-        <th>Trainer Name:</th>
-        <th>Trainer Type:</th>
-    </tr>
-</thead>
-<tbody>
-<% @trainers.each do |trainer|%>
-    <tr>
-        <td><%= link_to trainer.id, trainer %></td>
-        <td><%= link_to trainer.name, trainer %></td>
-        <td><%= trainer.trainerType.upcase %></td>
-    </tr>
-<% end %>
-</tbody>
-</table>
+    <table class="ui striped table">
+    <thead>
+        <tr>
+            <th>Trainer ID:</th>
+            <th>Trainer Name:</th>
+            <th>Trainer Type:</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @trainers.each do |trainer|%>
+        <tr>
+            <td><%= link_to trainer.id, trainer %></td>
+            <td><%= link_to trainer.name, trainer %></td>
+            <td><%= trainer.trainerType.upcase %></td>
+        </tr>
+    <% end %>
+    </tbody>
+    </table>
+</div>
