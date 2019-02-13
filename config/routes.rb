@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pokemons/index'
+  get 'pokemons/show'
   get 'team_members/index'
   get 'team_members/show'
   get 'teams/index'
