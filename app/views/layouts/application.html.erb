@@ -19,6 +19,15 @@
         <a class="red item" href='<%= teams_path %>'>Generation</a>
         <a class="red item" href='<%= teams_path %>'>Game</a>
         <a class="red item" href='<%= teams_path %>'>About</a>
+        <div class="ui inverted menu">
+        <div class="item">
+          <%= form_tag(search_results_path, method: "get") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+          <% end %>
+        </div>
+      </div>
       </div>
     </div>
     <%= yield %>
