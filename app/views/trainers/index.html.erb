@@ -1,16 +1,20 @@
-<h1>Pokemon Trainers</h1>
+<h1 class="ui header">Pokemon Trainers</h1>
 
-<div class="table">
-<div class="thead thead-danger">
-    <tr>Trainer ID:</tr>
-    <tr>Trainer Name:</tr>
-    <tr>Trainer Type:</tr>
-</div>
-<div class="tbody">
+<table class="ui striped table">
+<thead>
+    <tr>
+        <th>Trainer ID:</th>
+        <th>Trainer Name:</th>
+        <th>Trainer Type:</th>
+    </tr>
+</thead>
+<tbody>
 <% @trainers.each do |trainer|%>
-    <tr><%= link_to trainer.id, trainer %></tr>
-    <tr><%= link_to trainer.name, trainer %></tr>
-    <tr><%= trainer.trainerType %></tr>
+    <tr>
+        <td><%= link_to trainer.id, trainer %></td>
+        <td><%= link_to trainer.name, trainer %></td>
+        <td><%= trainer.trainerType %></td>
+    </tr>
 <% end %>
-</div>
-</div>
+</tbody>
+</table>

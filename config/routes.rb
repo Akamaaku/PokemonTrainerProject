@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'teams/index'
+  get 'teams/show'
   resources :trainers, only:[:index, :show]
   resources :pages
   root to: 'trainers#index'
