@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'search/results'
   resources :trainers, only:[:index, :show]
   resources :teams, only:[:index, :show]
   resources :team_members, only:[:index, :show]
