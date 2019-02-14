@@ -1,2 +1,5 @@
-<h1>Search#results</h1>
-<p>Find me in app/views/search/results.html.erb</p>
+<h1 class="ui header">Search Results</h1>
+<h2 class="ui header">Your query is <%= @query%> and it returned <%= pluralize(@trainers.size, 'result')%></h2>
+<%@trainers.each do |trainer|%>
+    <p><%= link_to trainer.name, trainer%></p>
+<% end %>

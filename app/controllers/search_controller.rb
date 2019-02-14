@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def results
-    @query = params[:input]
+    @query = params[:q]
     @trainers = Trainer.where('name LIKE ?', "%#{@query}%")
     @team = Team.where('teamName LIKE ?', "%#{@query}%")
     @team_members = TeamMember.where('nickname LIKE ?', "%#{@query}%")

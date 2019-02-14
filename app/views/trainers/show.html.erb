@@ -1,5 +1,8 @@
-<h1 class="ui header">Name: <%= @trainer.name %></h1>
-<h3 class="ui header">Trainer Type: <%= @trainer.trainerType.upcase %></h3>
-<h3 class="ui header">Team Name:<%= @trainer.team.teamName %></h3>
-<%= render @trainer.team%>
+<%= render @trainer%>
+
+<div>
+    <button class="ui primary">
+        <%= link_to 'Home', root_path%>
+    </button>
+</div>
 

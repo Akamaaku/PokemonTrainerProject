@@ -4,6 +4,6 @@ class TeamMembersController < ApplicationController
   end
 
   def show
-    @team_member = TeamMember.includes(:pokemons).find(params[:id])
+    @team_member = TeamMember.includes(:pokemon).find(params[:id])
   end
 end
